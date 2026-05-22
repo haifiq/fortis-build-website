@@ -16,7 +16,7 @@ export function Contact() {
             Get in Touch
           </h2>
           <p className="text-muted-foreground text-lg">
-            Interested in working with us? Contact our office for project enquiries and consultations.
+            Interested in working with us? Reach out for project enquiries and consultations.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ export function Contact() {
                     <MapPin className="w-7 h-7 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground">Business Address</h3>
+                    <h3 className="text-xl font-semibold text-foreground">Business Correspondence Address</h3>
                     <p className="text-sm text-muted-foreground">Shah Alam, Selangor</p>
                   </div>
                 </div>
@@ -78,23 +78,8 @@ export function Contact() {
           {/* Notice */}
           <div className="mt-8 p-6 bg-secondary border border-border text-center">
             <p className="text-muted-foreground">
-              For project enquiries, please contact our office directly. Official phone number and email will be updated soon.
+              Official phone number, email, and project office information will be updated soon.
             </p>
-          </div>
-
-          {/* Map */}
-          <div className="mt-8 relative aspect-video bg-secondary border border-border overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.1!2d101.52!3d3.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4d7a35a3e5e7%3A0x9e4e3c1c0c0c0c0c!2sTaman%20Perindustrian%20Batu%20Tiga%2C%20Shah%20Alam%2C%20Selangor!5e0!3m2!1sen!2smy!4v1"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Fortis Build Asia Location - Shah Alam"
-              className="grayscale"
-            />
           </div>
         </div>
       </div>

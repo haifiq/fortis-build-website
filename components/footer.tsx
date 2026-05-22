@@ -94,19 +94,19 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-foreground font-semibold text-lg mb-6">Contact Info</h4>
+            <h4 className="text-foreground font-semibold text-lg mb-6">Business Correspondence Address</h4>
             <ul className="space-y-4">
               <li>
-                <span className="text-primary text-xs uppercase tracking-wider block mb-1">Address</span>
                 <span className="text-muted-foreground text-sm">
                   No. 7, Jalan Warden U1/76,<br />
                   Taman Perindustrian Batu Tiga,<br />
-                  40150 Shah Alam, Selangor, Malaysia
+                  40150 Shah Alam,<br />
+                  Selangor, Malaysia.
                 </span>
               </li>
               <li>
                 <span className="text-muted-foreground text-sm italic">
-                  Official phone number and email will be updated soon.
+                  Official phone number, email, and project office information will be updated soon.
                 </span>
               </li>
             </ul>
