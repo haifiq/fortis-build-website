@@ -105,16 +105,9 @@ export function Footer() {
                 </span>
               </li>
               <li>
-                <span className="text-primary text-xs uppercase tracking-wider block mb-1">Phone</span>
-                <a href="tel:+60312345678" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                  +60 3-1234 5678
-                </a>
-              </li>
-              <li>
-                <span className="text-primary text-xs uppercase tracking-wider block mb-1">Email</span>
-                <a href="mailto:info@fortisbuild.com.my" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                  info@fortisbuild.com.my
-                </a>
+                <span className="text-muted-foreground text-sm italic">
+                  Official phone number and email will be updated soon.
+                </span>
               </li>
             </ul>
           </div>
