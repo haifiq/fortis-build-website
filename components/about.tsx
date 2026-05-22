@@ -2,12 +2,12 @@ import Image from "next/image"
 import { CheckCircle } from "lucide-react"
 
 const features = [
-  "Licensed and certified construction professionals",
-  "Comprehensive project management solutions",
-  "Sustainable building practices",
-  "On-time and within-budget delivery",
-  "Quality assurance at every stage",
-  "Post-construction support and maintenance",
+  "Building and civil construction works",
+  "Mechanical and electrical (M&E) services",
+  "Turnkey and design-and-build solutions",
+  "Infrastructure development projects",
+  "Renovation and retrofitting services",
+  "Professional project management",
 ]
 
 export function About() {
@@ -29,8 +29,8 @@ export function About() {
             <div className="absolute -bottom-6 -right-6 w-48 h-48 border-2 border-primary -z-10 hidden lg:block" />
             {/* Experience badge */}
             <div className="absolute -bottom-4 -left-4 bg-primary text-primary-foreground p-6 lg:p-8">
-              <div className="text-4xl lg:text-5xl font-bold">15+</div>
-              <div className="text-sm uppercase tracking-wider mt-1">Years of Excellence</div>
+              <div className="text-3xl lg:text-4xl font-bold">Since 2020</div>
+              <div className="text-sm uppercase tracking-wider mt-1">Est. Malaysia</div>
             </div>
           </div>
 
@@ -46,15 +46,15 @@ export function About() {
             </h2>
 
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Fortis Build Asia Sdn. Bhd. is a premier construction company headquartered in Selangor, Malaysia. 
-              With over 15 years of industry experience, we have established ourselves as a trusted partner for 
-              commercial, residential, and industrial construction projects.
+              Fortis Build Asia Sdn. Bhd. (Registration No: 202001028370) is a Malaysian design-and-build and 
+              construction company incorporated on 17 September 2020. Headquartered in Shah Alam, Selangor, 
+              we specialize in building, civil, mechanical, electrical, renovation, and infrastructure works.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Our commitment to excellence, innovative construction techniques, and unwavering focus on quality 
-              have enabled us to deliver landmark projects across the nation. We believe in building not just 
-              structures, but lasting relationships with our clients.
+              We undertake projects as a contractor, subcontractor, supplier, and project manager, delivering 
+              comprehensive turnkey and design-and-build solutions. Our commitment to excellence and innovative 
+              construction techniques have established us as a trusted partner across Malaysia.
             </p>
 
             {/* Features list */}

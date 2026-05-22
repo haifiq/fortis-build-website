@@ -37,8 +37,8 @@ export function Hero() {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed">
-            Fortis Build Asia delivers exceptional construction solutions across Malaysia, 
-            transforming visions into architectural masterpieces with precision and excellence.
+            Fortis Build Asia Sdn. Bhd. is a Malaysian design-and-build contractor delivering 
+            comprehensive construction solutions in building, civil, M&E, and infrastructure works.
           </p>
 
           {/* CTAs */}
@@ -59,16 +59,16 @@ export function Hero() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border/50">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary">15+</div>
-              <div className="text-sm text-muted-foreground mt-1">Years Experience</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">2020</div>
+              <div className="text-sm text-muted-foreground mt-1">Year Incorporated</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary">200+</div>
-              <div className="text-sm text-muted-foreground mt-1">Projects Completed</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">RM100K</div>
+              <div className="text-sm text-muted-foreground mt-1">Issued Share Capital</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary">50+</div>
-              <div className="text-sm text-muted-foreground mt-1">Expert Team</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">Malaysia</div>
+              <div className="text-sm text-muted-foreground mt-1">Design & Build Contractor</div>
             </div>
           </div>
         </div>

@@ -1,135 +1,116 @@
-"use client"
-
-import { useState } from "react"
-import Image from "next/image"
-import { ArrowRight, MapPin } from "lucide-react"
+import { ArrowRight, Building2, Wrench, Zap, HardHat, Compass, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
 
-const projects = [
+const capabilities = [
   {
-    id: 1,
-    title: "Menara Fortis Tower",
-    category: "Commercial",
-    location: "Kuala Lumpur",
-    image: "/images/project-1.jpg",
-    description: "A 45-story premium office tower featuring state-of-the-art facilities and sustainable design.",
-    year: "2023",
+    icon: Compass,
+    title: "Design & Build Projects",
+    description:
+      "Concept planning, design coordination, technical documentation, and construction delivery for commercial, industrial, and infrastructure projects.",
   },
   {
-    id: 2,
-    title: "The Residences @ Selangor",
-    category: "Residential",
-    location: "Shah Alam",
-    image: "/images/project-2.jpg",
-    description: "Luxury condominium development with 500 units offering panoramic city views.",
-    year: "2024",
+    icon: Building2,
+    title: "Building & Civil Works",
+    description:
+      "General building works, civil construction, site preparation, structural support works, and construction-related services.",
   },
   {
-    id: 3,
-    title: "Fortis Industrial Park",
-    category: "Industrial",
-    location: "Klang Valley",
-    image: "/images/project-3.jpg",
-    description: "Modern industrial complex spanning 50 acres with advanced logistics facilities.",
-    year: "2023",
+    icon: Zap,
+    title: "Mechanical & Electrical Works",
+    description:
+      "M&E installation, maintenance, system coordination, and support works for buildings and facilities.",
+  },
+  {
+    icon: Wrench,
+    title: "Renovation & Retrofitting",
+    description:
+      "Renovation, upgrading, and improvement works for offices, commercial spaces, industrial premises, and existing buildings.",
+  },
+  {
+    icon: HardHat,
+    title: "Infrastructure Support Works",
+    description:
+      "Drainage, utilities, external works, road-related works, and site development support.",
+  },
+  {
+    icon: Users,
+    title: "Project Management & Contracting",
+    description:
+      "Project coordination and management as contractor, subcontractor, supplier, or project manager.",
   },
 ]
 
-const categories = ["All", "Commercial", "Residential", "Industrial"]
-
 export function Projects() {
-  const [activeCategory, setActiveCategory] = useState("All")
-
-  const filteredProjects =
-    activeCategory === "All"
-      ? projects
-      : projects.filter((project) => project.category === activeCategory)
-
   return (
     <section id="projects" className="py-24 bg-secondary">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
-          <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-[2px] bg-primary" />
-              <span className="text-primary text-sm uppercase tracking-[0.3em]">Featured Projects</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-              Our Landmark Projects
-            </h2>
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="w-12 h-[2px] bg-primary" />
+            <span className="text-primary text-sm uppercase tracking-[0.3em]">What We Do</span>
+            <div className="w-12 h-[2px] bg-primary" />
           </div>
-
-          {/* Category Filter */}
-          <div className="flex flex-wrap gap-2">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={activeCategory === category ? "default" : "outline"}
-                size="sm"
-                onClick={() => setActiveCategory(category)}
-                className={
-                  activeCategory === category
-                    ? "bg-primary text-primary-foreground"
-                    : "border-border text-muted-foreground hover:text-foreground hover:border-primary"
-                }
-              >
-                {category}
-              </Button>
-            ))}
-          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            Our Capabilities
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            Fortis Build Asia provides comprehensive design-and-build and construction services 
+            across multiple disciplines, delivering quality solutions for projects of all scales.
+          </p>
         </div>
 
-        {/* Projects Grid */}
+        {/* Capabilities Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project) => (
-            <div key={project.id} className="group cursor-pointer">
-              {/* Image */}
-              <div className="relative aspect-[4/3] overflow-hidden mb-6">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
-                {/* Category Badge */}
-                <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 text-xs uppercase tracking-wider">
-                  {project.category}
-                </div>
+          {capabilities.map((capability, index) => {
+            const Icon = capability.icon
+            return (
+              <Card
+                key={index}
+                className="bg-background border-border hover:border-primary/50 transition-all duration-300 group"
+              >
+                <CardContent className="p-8">
+                  {/* Icon */}
+                  <div className="w-14 h-14 bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+                    <Icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+                  </div>
 
-                {/* Year Badge */}
-                <div className="absolute top-4 right-4 bg-background/90 text-foreground px-3 py-1 text-xs">
-                  {project.year}
-                </div>
-              </div>
+                  {/* Content */}
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    {capability.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                    {capability.description}
+                  </p>
 
-              {/* Content */}
-              <div>
-                <div className="flex items-center gap-2 text-muted-foreground text-sm mb-2">
-                  <MapPin className="w-4 h-4" />
-                  <span>{project.location}</span>
-                </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  {project.description}
-                </p>
-                <span className="inline-flex items-center text-primary text-sm font-medium group-hover:underline">
-                  View Project <ArrowRight className="ml-2 w-4 h-4" />
-                </span>
-              </div>
-            </div>
-          ))}
+                  {/* CTA */}
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center text-primary text-sm font-medium hover:underline"
+                  >
+                    Request a Quote <ArrowRight className="ml-2 w-4 h-4" />
+                  </a>
+                </CardContent>
+              </Card>
+            )
+          })}
         </div>
 
-        {/* View All Button */}
-        <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            View All Projects
-            <ArrowRight className="ml-2 w-4 h-4" />
+        {/* Bottom CTA */}
+        <div className="text-center mt-16">
+          <p className="text-muted-foreground mb-6">
+            Ready to discuss your project requirements?
+          </p>
+          <Button
+            asChild
+            size="lg"
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
+          >
+            <a href="#contact">
+              Get in Touch
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </a>
           </Button>
         </div>
       </div>

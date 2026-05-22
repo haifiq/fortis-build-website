@@ -1,42 +1,42 @@
-import { Building2, Home, Factory, Ruler, HardHat, Wrench } from "lucide-react"
+import { Ruler, Building2, Zap, Wrench, Factory, HardHat } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const services = [
   {
-    icon: Building2,
-    title: "Commercial Construction",
-    description:
-      "From office towers to retail complexes, we deliver cutting-edge commercial spaces that drive business success.",
-  },
-  {
-    icon: Home,
-    title: "Residential Projects",
-    description:
-      "Premium homes and condominiums built with precision craftsmanship and attention to every detail.",
-  },
-  {
-    icon: Factory,
-    title: "Industrial Facilities",
-    description:
-      "Warehouses, factories, and industrial complexes designed for optimal efficiency and productivity.",
-  },
-  {
     icon: Ruler,
-    title: "Design & Build",
+    title: "Design & Build Solutions",
     description:
-      "Comprehensive design-build solutions that streamline your project from concept to completion.",
+      "End-to-end design-and-build services from concept planning, coordination, technical documentation, and construction delivery for commercial, industrial, and infrastructure projects.",
   },
   {
-    icon: HardHat,
-    title: "Project Management",
+    icon: Building2,
+    title: "Building & Civil Works",
     description:
-      "Expert oversight ensuring your project stays on schedule, within budget, and meets quality standards.",
+      "Construction services for building and civil works, including structural, architectural, site preparation, and general construction activities for various project requirements.",
+  },
+  {
+    icon: Zap,
+    title: "Mechanical & Electrical Works",
+    description:
+      "Mechanical and electrical works including installation, maintenance, system coordination, and support works for building and infrastructure projects.",
   },
   {
     icon: Wrench,
     title: "Renovation & Retrofitting",
     description:
-      "Transform existing structures with modern upgrades and sustainable retrofitting solutions.",
+      "Renovation, upgrading, and retrofitting works for existing buildings, facilities, offices, commercial spaces, and industrial premises.",
+  },
+  {
+    icon: Factory,
+    title: "Infrastructure Works",
+    description:
+      "Infrastructure construction and support works including utilities, drainage, road-related works, external works, and development support for project sites.",
+  },
+  {
+    icon: HardHat,
+    title: "Project Management & Contracting",
+    description:
+      "Project coordination and management services as contractor, subcontractor, supplier, or project manager to support smooth project execution from planning to completion.",
   },
 ]
 
@@ -56,7 +56,7 @@ export function Services() {
           </h2>
           <p className="text-muted-foreground text-lg">
             We offer a full spectrum of construction services tailored to meet the unique needs of each project, 
-            ensuring excellence at every stage.
+            ensuring quality delivery at every stage.
           </p>
         </div>
 
@@ -77,11 +77,14 @@ export function Services() {
                 <h3 className="text-xl font-semibold text-foreground mb-3">{service.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{service.description}</p>
 
-                {/* Decorative line */}
+                {/* Get a Quote link */}
                 <div className="mt-6 pt-6 border-t border-border">
-                  <span className="text-primary text-sm uppercase tracking-wider font-medium group-hover:underline cursor-pointer">
-                    Learn More →
-                  </span>
+                  <a 
+                    href="#contact" 
+                    className="text-primary text-sm uppercase tracking-wider font-medium group-hover:underline cursor-pointer"
+                  >
+                    Get a Quote →
+                  </a>
                 </div>
               </CardContent>
             </Card>

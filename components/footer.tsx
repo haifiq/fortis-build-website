@@ -10,9 +10,9 @@ const quickLinks = [
 ]
 
 const services = [
-  "Commercial Construction",
-  "Residential Projects",
-  "Industrial Facilities",
+  "Building & Civil Works",
+  "Mechanical & Electrical",
+  "Infrastructure Works",
   "Design & Build",
   "Project Management",
   "Renovation",
@@ -43,8 +43,8 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Building excellence across Malaysia with over 15 years of experience in commercial, 
-              residential, and industrial construction.
+              A Malaysian design-and-build and construction company specializing in building, civil, 
+              mechanical, electrical, renovation, and infrastructure works since 2020.
             </p>
             {/* Social Links */}
             <div className="flex gap-3">
@@ -94,27 +94,20 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-foreground font-semibold text-lg mb-6">Contact Info</h4>
+            <h4 className="text-foreground font-semibold text-lg mb-6">Business Correspondence Address</h4>
             <ul className="space-y-4">
               <li>
-                <span className="text-primary text-xs uppercase tracking-wider block mb-1">Address</span>
                 <span className="text-muted-foreground text-sm">
-                  SG-01-07, First Floor, Ayuman Suites,<br />
-                  Jalan Sentosa 2, Gombak,<br />
-                  Selangor, Malaysia
+                  No. 7, Jalan Warden U1/76,<br />
+                  Taman Perindustrian Batu Tiga,<br />
+                  40150 Shah Alam,<br />
+                  Selangor, Malaysia.
                 </span>
               </li>
               <li>
-                <span className="text-primary text-xs uppercase tracking-wider block mb-1">Phone</span>
-                <a href="tel:+60312345678" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                  +60 3-1234 5678
-                </a>
-              </li>
-              <li>
-                <span className="text-primary text-xs uppercase tracking-wider block mb-1">Email</span>
-                <a href="mailto:info@fortisbuild.com.my" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                  info@fortisbuild.com.my
-                </a>
+                <span className="text-muted-foreground text-sm italic">
+                  Official phone number, email, and project office information will be updated soon.
+                </span>
               </li>
             </ul>
           </div>
