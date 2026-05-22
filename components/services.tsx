@@ -1,42 +1,42 @@
-import { Building2, Zap, Factory, Ruler, HardHat, Wrench } from "lucide-react"
+import { Ruler, Building2, Zap, Wrench, Factory, HardHat } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const services = [
   {
+    icon: Ruler,
+    title: "Design & Build Solutions",
+    description:
+      "End-to-end design-and-build services from concept planning, coordination, technical documentation, and construction delivery for commercial, industrial, and infrastructure projects.",
+  },
+  {
     icon: Building2,
     title: "Building & Civil Works",
     description:
-      "Comprehensive building and civil construction services for commercial, residential, and public sector projects across Malaysia.",
+      "Construction services for building and civil works, including structural, architectural, site preparation, and general construction activities for various project requirements.",
   },
   {
     icon: Zap,
-    title: "Mechanical & Electrical",
+    title: "Mechanical & Electrical Works",
     description:
-      "Complete M&E solutions including installation, maintenance, and systems integration for buildings and facilities.",
-  },
-  {
-    icon: Factory,
-    title: "Infrastructure Works",
-    description:
-      "Infrastructure development including roads, drainage, utilities, and site development for industrial and commercial zones.",
-  },
-  {
-    icon: Ruler,
-    title: "Design & Build",
-    description:
-      "End-to-end design-and-build solutions that streamline your project from concept through completion under one contract.",
-  },
-  {
-    icon: HardHat,
-    title: "Project Management",
-    description:
-      "Professional project management services as contractor, subcontractor, or supplier ensuring quality and timely delivery.",
+      "Mechanical and electrical works including installation, maintenance, system coordination, and support works for building and infrastructure projects.",
   },
   {
     icon: Wrench,
     title: "Renovation & Retrofitting",
     description:
-      "Transform and upgrade existing structures with modern renovation and retrofitting solutions for all building types.",
+      "Renovation, upgrading, and retrofitting works for existing buildings, facilities, offices, commercial spaces, and industrial premises.",
+  },
+  {
+    icon: Factory,
+    title: "Infrastructure Works",
+    description:
+      "Infrastructure construction and support works including utilities, drainage, road-related works, external works, and development support for project sites.",
+  },
+  {
+    icon: HardHat,
+    title: "Project Management & Contracting",
+    description:
+      "Project coordination and management services as contractor, subcontractor, supplier, or project manager to support smooth project execution from planning to completion.",
   },
 ]
 
@@ -56,7 +56,7 @@ export function Services() {
           </h2>
           <p className="text-muted-foreground text-lg">
             We offer a full spectrum of construction services tailored to meet the unique needs of each project, 
-            ensuring excellence at every stage.
+            ensuring quality delivery at every stage.
           </p>
         </div>
 
@@ -77,11 +77,14 @@ export function Services() {
                 <h3 className="text-xl font-semibold text-foreground mb-3">{service.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{service.description}</p>
 
-                {/* Decorative line */}
+                {/* Get a Quote link */}
                 <div className="mt-6 pt-6 border-t border-border">
-                  <span className="text-primary text-sm uppercase tracking-wider font-medium group-hover:underline cursor-pointer">
-                    Learn More →
-                  </span>
+                  <a 
+                    href="#contact" 
+                    className="text-primary text-sm uppercase tracking-wider font-medium group-hover:underline cursor-pointer"
+                  >
+                    Get a Quote →
+                  </a>
                 </div>
               </CardContent>
             </Card>
