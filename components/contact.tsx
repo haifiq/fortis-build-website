@@ -11,7 +11,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Visit Us",
-    details: ["SG-01-07, First Floor, Ayuman Suites,", "Jalan Sentosa 2, Gombak,", "Selangor, Malaysia"],
+    details: ["No. 7, Jalan Warden U1/76,", "Taman Perindustrian Batu Tiga,", "40150 Shah Alam, Selangor, Malaysia"],
   },
   {
     icon: Phone,
@@ -187,14 +187,14 @@ export function Contact() {
             {/* Map placeholder */}
             <div className="relative aspect-video bg-secondary border border-border overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.5!2d101.7!3d3.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMTUnMDAuMCJOIDEwMcKwNDInMDAuMCJF!5e0!3m2!1sen!2smy!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.1!2d101.52!3d3.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4d7a35a3e5e7%3A0x9e4e3c1c0c0c0c0c!2sTaman%20Perindustrian%20Batu%20Tiga%2C%20Shah%20Alam%2C%20Selangor!5e0!3m2!1sen!2smy!4v1"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Fortis Build Asia Location"
+                title="Fortis Build Asia Location - Shah Alam"
                 className="grayscale"
               />
             </div>

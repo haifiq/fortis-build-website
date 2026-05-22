@@ -1,42 +1,42 @@
-import { Building2, Home, Factory, Ruler, HardHat, Wrench } from "lucide-react"
+import { Building2, Zap, Factory, Ruler, HardHat, Wrench } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const services = [
   {
     icon: Building2,
-    title: "Commercial Construction",
+    title: "Building & Civil Works",
     description:
-      "From office towers to retail complexes, we deliver cutting-edge commercial spaces that drive business success.",
+      "Comprehensive building and civil construction services for commercial, residential, and public sector projects across Malaysia.",
   },
   {
-    icon: Home,
-    title: "Residential Projects",
+    icon: Zap,
+    title: "Mechanical & Electrical",
     description:
-      "Premium homes and condominiums built with precision craftsmanship and attention to every detail.",
+      "Complete M&E solutions including installation, maintenance, and systems integration for buildings and facilities.",
   },
   {
     icon: Factory,
-    title: "Industrial Facilities",
+    title: "Infrastructure Works",
     description:
-      "Warehouses, factories, and industrial complexes designed for optimal efficiency and productivity.",
+      "Infrastructure development including roads, drainage, utilities, and site development for industrial and commercial zones.",
   },
   {
     icon: Ruler,
     title: "Design & Build",
     description:
-      "Comprehensive design-build solutions that streamline your project from concept to completion.",
+      "End-to-end design-and-build solutions that streamline your project from concept through completion under one contract.",
   },
   {
     icon: HardHat,
     title: "Project Management",
     description:
-      "Expert oversight ensuring your project stays on schedule, within budget, and meets quality standards.",
+      "Professional project management services as contractor, subcontractor, or supplier ensuring quality and timely delivery.",
   },
   {
     icon: Wrench,
     title: "Renovation & Retrofitting",
     description:
-      "Transform existing structures with modern upgrades and sustainable retrofitting solutions.",
+      "Transform and upgrade existing structures with modern renovation and retrofitting solutions for all building types.",
   },
 ]
 
